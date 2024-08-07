@@ -21,7 +21,7 @@ function Profile() {
         <h1 className='text-3xl font-bold '>BMI calculator</h1>
         <header className='text-2xl font-bold mt-4 mb-3'>Profile</header>
       <div className='flex justify-center'>
-      <div className='w-1/2 h-auto bg-lime-200 rounded-md py-4'>
+      <div className='w-1/2 h-auto bg-lime-200 rounded-lg py-4'>
 
       
       
@@ -40,20 +40,20 @@ function Profile() {
 
       <div className='bg-gray-300 flex justify-around rounded-md mx-10'>
           <label htmlFor="age">Age</label>
-          <input type="number" value={formData.age} onChange={handlechange} name="age" className='w-16 rounded-md bg-slate-400' />
+          <input required type="number" value={formData.age} onChange={handlechange} name="age" className='w-16 rounded-md bg-slate-400' />
           <label htmlFor="weight" className='bg-gray-400 rounded-md px-2'>years</label>
 
         </div>
 
         <div className='bg-gray-300 flex justify-around mt-3 rounded-md mx-10' >
           <label htmlFor="weight">Weight</label>
-          <input type="number" value={formData.weight} onChange={handlechange} name="weight" className='w-16 rounded-md bg-slate-400' />
+          <input required type="number" value={formData.weight} onChange={handlechange} name="weight" className='w-16 rounded-md bg-slate-400' />
           <label htmlFor="weight" className='bg-gray-400 rounded-md px-2'>Kg</label>
         </div>
 
         <div className='bg-gray-300 flex justify-around mt-3 rounded-md mx-10'>
           <label htmlFor="height">Height</label>
-          <input type="number" value={formData.height} onChange={handlechange} name="height" className='w-16 rounded-md bg-slate-400' />
+          <input required type="number" value={formData.height} onChange={handlechange} name="height" className='w-16 rounded-md bg-slate-400' />
           <label htmlFor="height" className='bg-gray-400 rounded-md px-2'>cm</label>
         </div>
 

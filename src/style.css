@@ -1,0 +1,18 @@
+.button span::after {
+    content: '\00bb'; /* Right-pointing double angle quotation mark */
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span::after {
+    opacity: 1;
+    right: 0;
+  }
